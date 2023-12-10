@@ -8,5 +8,5 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . .
 # Compiler et exécuter
-RUN gcc -o main -lm -Wall -Wextra -Werror -fsanitize=address main.c
+RUN make
 CMD ["./main"]
